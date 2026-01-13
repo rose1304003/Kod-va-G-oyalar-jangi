@@ -69,8 +69,7 @@ TRANSLATIONS = {
         "updated": "Updated successfully.",
         "help": (
             "💡 Need help or found a bug?\n\n"
-            "If you have questions, need assistance, or have suggestions, contact us at:\n"
-            "📧 ai500@itcommunity.uz\n\n"
+            "If you have questions, need assistance, or have suggestions, please reach out.\n\n"
             "Describe the problem in detail and attach screenshots if possible."
         ),
     },
@@ -144,8 +143,7 @@ TRANSLATIONS = {
         "updated": "Обновлено.",
         "help": (
             "💡 Нужна помощь или нашли ошибку?\n\n"
-            "Если у вас есть вопросы, нужна помощь или предложения, напишите нам:\n"
-            "📧 ai500@itcommunity.uz\n\n"
+            "Если у вас есть вопросы, нужна помощь или предложения, напишите нам.\n\n"
             "Опишите проблему подробно и приложите скриншоты."
         ),
     },
@@ -241,8 +239,7 @@ TRANSLATIONS = {
         "updated": "Yangilandi.",
         "help": (
             "💡 Yordam kerakmi yoki xatolik topdingizmi?\n\n"
-            "Savollar, takliflar yoki yordam uchun biz bilan bog‘laning:\n"
-            "📧 ai500@itcommunity.uz\n\n"
+            "Savollar, takliflar yoki yordam uchun biz bilan bog‘laning.\n\n"
             "Muammoni batafsil yozing va imkon bo‘lsa skrinshot yuboring."
         ),
     },
