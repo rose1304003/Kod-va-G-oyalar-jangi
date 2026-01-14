@@ -1,246 +1,536 @@
+"""
+Multi-language translations for ITCom Hackathons Bot
+Supports: Uzbek (uz), Russian (ru), English (en)
+"""
+
+LANGUAGES = ['uz', 'ru', 'en']
+
 TRANSLATIONS = {
-    "en": {
-        "offer_text": "Please review the public offer and confirm to continue.",
-        "offer_accept": "I agree",
-        "offer_decline": "I do not agree",
-        "offer_required": "You must accept the offer to continue.",
-        "stages": "📌 Stages",
-        "choose_stage": "Choose a stage:",
-        "no_stages": "No stages available.",
-        "stage_not_found": "Stage not found.",
-        "open": "Open",
-        "closed": "Closed",
-        "submit_demo": "Submit demo link",
-        "ask_demo_link": "Please send your demo website link:",
-        "invalid_link": "Invalid link. Please send a valid URL starting with http:// or https://",
-        "submission_saved": "✅ Submission saved. Thank you!",
-        "submission_closed": "Submissions are closed for this stage.",
-        "submission_received": "Your submission",
-        "team_required": "You must be in a team to submit a demo link.",
-        "reminder_3days": "⏳ 3 days left for {stage}. Don't forget to submit your demo!",
-        "reminder_2days": "⏳ 2 days left for {stage}. Please submit your demo link.",
-        "reminder_deadline": "⚠️ Deadline approaching for {stage}. Only 1 day left!",
-        "reminder_last_day": "🚨 Last day to submit for {stage}!",
-        "intro": "Welcome to ITCom Hackathons Bot! Let's register you.",
-        "ask_first_name": "Enter your first name:",
-        "ask_last_name": "Enter your last name:",
-        "ask_birth_date": "Enter your birth date (DD.MM.YYYY):",
-        "invalid_birth_date": "Invalid date. Please use DD.MM.YYYY.",
-        "ask_gender": "Select your gender:",
-        "ask_location": "Enter your location:",
-        "share_phone": "Share phone",
-        "ask_phone": "Share your phone number:",
-        "ask_pinfl": "Enter your PINFL (14 digits):",
-        "invalid_pinfl": "Invalid PINFL. It must be 14 digits.",
-        "registration_complete": "Registration complete! Use the menu below.",
-        "welcome_back": "Welcome back!",
-        "choose_hackathon": "Choose a hackathon:",
-        "no_hackathons": "No hackathons available.",
-        "hackathon_not_found": "Hackathon not found.",
-        "see_details": "See details",
-        "leave_team": "Leave team",
-        "remove_member": "Remove member",
-        "register": "Register",
-        "join_team": "Join team",
-        "back": "Back",
-        "ask_team_name": "Enter your team name:",
-        "ask_team_role": "Enter your role in the team:",
-        "ask_team_field": "Enter your team field (AI, Web, etc.):",
-        "ask_portfolio": "Provide a portfolio link (optional):",
-        "no_portfolio": "No portfolio",
-        "team_created": "Team created: {name}\nCode: {code}\nShare the code with your team.",
-        "ask_team_code": "Enter the team code:",
-        "invalid_team_code": "Invalid team code. Try again.",
-        "already_in_team": "You are already in this team.",
-        "joined_team": "You joined {name}! Code: {code}",
-        "team_not_found": "Team not found.",
-        "left_team": "You left the team.",
-        "no_members_to_remove": "No members to remove.",
-        "choose_member": "Select a member to remove:",
-        "member_removed": "Member removed.",
-        "settings": "Settings:",
-        "change_language": "Change language",
-        "edit_personal": "Edit personal data",
-        "choose_language": "Choose a language:",
-        "language_updated": "Language updated.",
-        "user_not_found": "User not found.",
-        "choose_gender": "Choose gender:",
-        "enter_new_value": "Enter new value:",
-        "updated": "Updated successfully.",
-        "help": (
-            "💡 Need help or found a bug?\n\n"
-            "If you have questions, need assistance, or have suggestions, please reach out.\n\n"
-            "Describe the problem in detail and attach screenshots if possible."
-        ),
+    # Menu items
+    'hackathons': {
+        'uz': 'Xakatonlar',
+        'ru': 'Хакатоны',
+        'en': 'Hackathons'
     },
-    "ru": {
-        "offer_text": "Пожалуйста, ознакомьтесь с офертой и подтвердите для продолжения.",
-        "offer_accept": "Согласен",
-        "offer_decline": "Не согласен",
-        "offer_required": "Для продолжения необходимо согласиться с офертой.",
-        "stages": "📌 Этапы",
-        "choose_stage": "Выберите этап:",
-        "no_stages": "Этапов пока нет.",
-        "stage_not_found": "Этап не найден.",
-        "open": "Открыт",
-        "closed": "Закрыт",
-        "submit_demo": "Отправить демо‑ссылку",
-        "ask_demo_link": "Отправьте ссылку на демо‑сайт:",
-        "invalid_link": "Неверная ссылка. Отправьте URL, начиная с http:// или https://",
-        "submission_saved": "✅ Отправка сохранена. Спасибо!",
-        "submission_closed": "Приём работ по этому этапу закрыт.",
-        "submission_received": "Ваша отправка",
-        "team_required": "Для отправки нужно быть в команде.",
-        "reminder_3days": "⏳ Осталось 3 дня до дедлайна {stage}. Не забудьте отправить демо!",
-        "reminder_2days": "⏳ Осталось 2 дня до дедлайна {stage}. Отправьте ссылку.",
-        "reminder_deadline": "⚠️ Дедлайн {stage} уже близко. Остался 1 день!",
-        "reminder_last_day": "🚨 Последний день для отправки по {stage}!",
-        "intro": "Добро пожаловать в ITCom Hackathons Bot! Давайте зарегистрируемся.",
-        "ask_first_name": "Введите имя:",
-        "ask_last_name": "Введите фамилию:",
-        "ask_birth_date": "Введите дату рождения (ДД.ММ.ГГГГ):",
-        "invalid_birth_date": "Неверная дата. Используйте ДД.ММ.ГГГГ.",
-        "ask_gender": "Выберите пол:",
-        "ask_location": "Введите локацию:",
-        "share_phone": "Поделиться телефоном",
-        "ask_phone": "Отправьте номер телефона:",
-        "ask_pinfl": "Введите ПИНФЛ (14 цифр):",
-        "invalid_pinfl": "Неверный ПИНФЛ. Должно быть 14 цифр.",
-        "registration_complete": "Регистрация завершена!",
-        "welcome_back": "С возвращением!",
-        "choose_hackathon": "Выберите хакатон:",
-        "no_hackathons": "Нет доступных хакатонов.",
-        "hackathon_not_found": "Хакатон не найден.",
-        "see_details": "Детали",
-        "leave_team": "Покинуть команду",
-        "remove_member": "Удалить участника",
-        "register": "Регистрация",
-        "join_team": "Вступить в команду",
-        "back": "Назад",
-        "ask_team_name": "Введите название команды:",
-        "ask_team_role": "Введите вашу роль:",
-        "ask_team_field": "Введите направление команды:",
-        "ask_portfolio": "Ссылка на портфолио (необязательно):",
-        "no_portfolio": "Без портфолио",
-        "team_created": "Команда создана: {name}\nКод: {code}",
-        "ask_team_code": "Введите код команды:",
-        "invalid_team_code": "Неверный код. Попробуйте снова.",
-        "already_in_team": "Вы уже в этой команде.",
-        "joined_team": "Вы вступили в {name}! Код: {code}",
-        "team_not_found": "Команда не найдена.",
-        "left_team": "Вы покинули команду.",
-        "no_members_to_remove": "Нет участников для удаления.",
-        "choose_member": "Выберите участника:",
-        "member_removed": "Участник удален.",
-        "settings": "Настройки:",
-        "change_language": "Сменить язык",
-        "edit_personal": "Личные данные",
-        "choose_language": "Выберите язык:",
-        "language_updated": "Язык обновлен.",
-        "user_not_found": "Пользователь не найден.",
-        "choose_gender": "Выберите пол:",
-        "enter_new_value": "Введите новое значение:",
-        "updated": "Обновлено.",
-        "help": (
-            "💡 Нужна помощь или нашли ошибку?\n\n"
-            "Если у вас есть вопросы, нужна помощь или предложения, напишите нам.\n\n"
-            "Опишите проблему подробно и приложите скриншоты."
-        ),
+    'my_hackathons': {
+        'uz': 'Mening xakatonlarim',
+        'ru': 'Мои хакатоны',
+        'en': 'My hackathons'
     },
-    "uz": {
-        "offer_text": (
-            "OMMAVIY OFERTA (Foydalanuvchi kelishuvi)\n"
-            "Ushbu shaklni to‘ldirish va “Ro‘yxatdan o‘tish” tugmasini bosish orqali Siz "
-            "(Ishtirokchi) “CBU Coding Hackathon - 2026” Tashkiliy qo‘mitasi bilan "
-            "quyidagi shartlar asosida kelishuv tuzasiz:\n"
-            "1. Ma’lumotlarning aniqligi: Siz taqdim etayotgan barcha shaxsiy "
-            "ma’lumotlarning (F.I.Sh., bog‘lanish vositalari, jamoa tarkibi) haqqoniy va "
-            "to‘g‘riligini tasdiqlaysiz. Yolg‘on yoki xato ma’lumotlar kiritilgan "
-            "taqdirda, Tashkiliy qo‘mita Sizni tanlovdan chetlashtirish huquqiga ega.\n"
-            "2. Shaxsiy ma’lumotlardan foydalanish: Siz Tashkiliy qo‘mitaga shaxsiy "
-            "ma’lumotlaringizni to‘plash, saqlash va qayta ishlashga hamda tanlov bilan "
-            "bog‘liq tashkiliy masalalar (xabarnoma yuborish, sertifikat tayyorlash, "
-            "g‘oliblarni e’lon qilish) uchun foydalanishga to‘liq rozilik berasiz.\n"
-            "3. Loyiha fayllaridan foydalanish: Siz tanlov doirasida yuklagan barcha "
-            "fayllar, dasturiy kodlar, taqdimotlar va g‘oyaviy yechimlardan Tashkiliy "
-            "qo‘mita hamda Hakamlar hay’ati tomonidan faqat baholash, tekshirish "
-            "(shu jumladan, plagiatga tekshirish) va tahlil qilish maqsadida "
-            "foydalanilishiga ruxsat berasiz.\n"
-            "4. Mas’uliyat: Ishtirokchi tomonidan uchinchi shaxslarning intellektual "
-            "mulk huquqlari buzilgan taqdirda, barcha huquqiy javobgarlik ishtirokchi "
-            "zimmasida bo‘ladi.\n\n"
-            "Davom etish uchun “Roziman” tugmasini bosing."
-        ),
-        "offer_accept": "Roziman",
-        "offer_decline": "Rozilik bermayman",
-        "offer_required": "Davom etish uchun ofertaga rozilik berishingiz kerak.",
-        "stages": "📌 Bosqichlar",
-        "choose_stage": "Bosqichni tanlang:",
-        "no_stages": "Bosqichlar mavjud emas.",
-        "stage_not_found": "Bosqich topilmadi.",
-        "open": "Ochiq",
-        "closed": "Yopiq",
-        "submit_demo": "Demo link yuborish",
-        "ask_demo_link": "Demo veb-sayt linkini yuboring:",
-        "invalid_link": "Noto‘g‘ri link. http:// yoki https:// bilan boshlanuvchi URL yuboring.",
-        "submission_saved": "✅ Topshiriq qabul qilindi. Rahmat!",
-        "submission_closed": "Ushbu bosqich uchun topshirish yopilgan.",
-        "submission_received": "Sizning topshirig‘ingiz",
-        "team_required": "Topshirish uchun jamoada bo‘lishingiz kerak.",
-        "reminder_3days": "⏳ {stage} uchun 3 kun qoldi. Demo yuborishni unutmang!",
-        "reminder_2days": "⏳ {stage} uchun 2 kun qoldi. Demo linkni yuboring.",
-        "reminder_deadline": "⚠️ {stage} uchun deadline yaqinlashdi. 1 kun qoldi!",
-        "reminder_last_day": "🚨 {stage} uchun oxirgi kun!",
-        "intro": "ITCom Hackathons Bot-ga xush kelibsiz! Ro'yxatdan o'tamiz.",
-        "ask_first_name": "Ismingizni kiriting:",
-        "ask_last_name": "Familiyangizni kiriting:",
-        "ask_birth_date": "Tug'ilgan sanani kiriting (KK.OO.YYYY):",
-        "invalid_birth_date": "Noto'g'ri sana. KK.OO.YYYY formatida kiriting.",
-        "ask_gender": "Jinsni tanlang:",
-        "ask_location": "Manzilingizni kiriting:",
-        "share_phone": "Telefonni ulashish",
-        "ask_phone": "Telefon raqamingizni yuboring:",
-        "ask_pinfl": "PINFL kiriting (14 raqam):",
-        "invalid_pinfl": "PINFL noto'g'ri. 14 raqam bo'lishi kerak.",
-        "registration_complete": "Ro'yxatdan o'tish yakunlandi!",
-        "welcome_back": "Qaytganingizdan xursandmiz!",
-        "choose_hackathon": "Hackathonni tanlang:",
-        "no_hackathons": "Hackathonlar mavjud emas.",
-        "hackathon_not_found": "Hackathon topilmadi.",
-        "see_details": "Batafsil",
-        "leave_team": "Jamoani tark etish",
-        "remove_member": "Ishtirokchini olib tashlash",
-        "register": "Ro'yxatdan o'tish",
-        "join_team": "Jamoaga qo'shilish",
-        "back": "Orqaga",
-        "ask_team_name": "Jamoa nomini kiriting:",
-        "ask_team_role": "Jamoada rolingiz:",
-        "ask_team_field": "Jamoa yo'nalishi:",
-        "ask_portfolio": "Portfolio havolasi (ixtiyoriy):",
-        "no_portfolio": "Portfolio yo'q",
-        "team_created": "Jamoa yaratildi: {name}\nKod: {code}",
-        "ask_team_code": "Jamoa kodini kiriting:",
-        "invalid_team_code": "Kod noto'g'ri. Qayta urinib ko'ring.",
-        "already_in_team": "Siz allaqachon jamoada.",
-        "joined_team": "{name} jamoasiga qo'shildingiz! Kod: {code}",
-        "team_not_found": "Jamoa topilmadi.",
-        "left_team": "Jamoani tark etdiniz.",
-        "no_members_to_remove": "Olib tashlash uchun a'zo yo'q.",
-        "choose_member": "A'zoni tanlang:",
-        "member_removed": "A'zo olib tashlandi.",
-        "settings": "Sozlamalar:",
-        "change_language": "Tilni o'zgartirish",
-        "edit_personal": "Shaxsiy ma'lumotlar",
-        "choose_language": "Tilni tanlang:",
-        "language_updated": "Til yangilandi.",
-        "user_not_found": "Foydalanuvchi topilmadi.",
-        "choose_gender": "Jinsni tanlang:",
-        "enter_new_value": "Yangi qiymatni kiriting:",
-        "updated": "Yangilandi.",
-        "help": (
-            "💡 Yordam kerakmi yoki xatolik topdingizmi?\n\n"
-            "Savollar, takliflar yoki yordam uchun biz bilan bog‘laning.\n\n"
-            "Muammoni batafsil yozing va imkon bo‘lsa skrinshot yuboring."
-        ),
+    'settings': {
+        'uz': 'Sozlamalar',
+        'ru': 'Настройки',
+        'en': 'Settings'
+    },
+    'help': {
+        'uz': 'Yordam',
+        'ru': 'Помощь',
+        'en': 'Help'
+    },
+    
+    # Welcome messages
+    'welcome_back': {
+        'uz': 'Xush kelibsiz!',
+        'ru': 'С возвращением!',
+        'en': 'Welcome back!'
+    },
+    'welcome_message': {
+        'uz': '''Bot nima qila oladi?
+
+👋 Kod va G'oyalar Hackathons Botiga xush kelibsiz!
+
+Ushbu bot sizga xakatonlarimizda samarali ishtirok etishga yordam beradi 💡
+
+Bu yerda siz:
+• Kelgusi xakatonlarga ro'yxatdan o'tishingiz 📝
+• Vazifalarni qabul qilish va topshirishingiz ⚙️
+• O'z yutuqlaringiz va natijalaringizni kuzatishingiz 📊
+• E'lonlardan xabardor bo'lishingiz mumkin 📬
+
+
+
+Omad tilaymiz va xakatonlarimizda ajoyib narsalar yarating 💚''',
+        'ru': '''Что умеет этот бот?
+
+👋 Добро пожаловать в Kod va G'oyalar Hackathons Bot!
+
+Этот бот поможет вам эффективно участвовать в наших хакатонах 💡
+
+Здесь вы можете:
+• Регистрироваться на предстоящие хакатоны 📝
+• Получать и отправлять задания ⚙️
+• Отслеживать свой прогресс и результаты 📊
+• Быть в курсе объявлений 📬
+
+
+
+Удачи и создавайте что-то удивительное на наших хакатонах 💚''',
+        'en': '''What can this bot do?
+
+👋 Welcome to the Kod va G'oyalar Hackathons Bot!
+
+This bot helps you participate in our hackathons effectively 💡
+
+Here you can:
+• Register for upcoming hackathons 📝
+• Receive and submit tasks ⚙️
+• Track your progress and results 📊
+• Stay updated with announcements 📬
+
+
+Good luck and build something amazing with our hackathons 💚'''
+    },
+    
+    # Registration
+    'enter_first_name': {
+        'uz': 'Ismingizni kiriting (masalan: Robiya)',
+        'ru': 'Введите ваше имя (например: Робия)',
+        'en': 'Enter your first name (e.g. Robiya)'
+    },
+    'enter_last_name': {
+        'uz': 'Familiyangizni kiriting (masalan: Obidjonova)',
+        'ru': 'Введите вашу фамилию (например: Обиджонова)',
+        'en': 'Enter your last name (e.g. Obidjonova)'
+    },
+    'enter_birth_date': {
+        'uz': 'Tug\'ilgan sanangizni kiriting (masalan: 23.10.2007)',
+        'ru': 'Введите дату рождения (например: 23.10.2007)',
+        'en': 'Enter your birth date (e.g. 23.10.2007)'
+    },
+    'send_phone': {
+        'uz': 'Telefon raqamingizni yuboring (📱 tugma orqali)',
+        'ru': 'Отправьте ваш номер телефона (📱 через кнопку)',
+        'en': 'Send your phone number (📱 via button)'
+    },
+    'share_phone_button': {
+        'uz': '📱 Telefon raqamni yuborish',
+        'ru': '📱 Отправить номер телефона',
+        'en': '📱 Send phone number'
+    },
+    'enter_pinfl': {
+        'uz': '''Shaxsiy identifikatsiya raqamingizni (JSHSHIR) kiriting - 14 raqam.
+
+Nima uchun JSHSHIR kerak:
+- yoshingizni tasdiqlash uchun
+- final tadbirda ishtirokingizni tashkil qilish uchun (turar joy va chipta)''',
+        'ru': '''Введите ваш персональный идентификационный номер (ПИНФЛ) - 14 цифр.
+
+Зачем нужен ПИНФЛ:
+- для подтверждения вашего возраста
+- для организации вашего участия в финале (проживание и билеты)''',
+        'en': '''Please enter your Personal Identification Number (PINFL) - 14 digits.
+
+Why we require your PINFL:
+- to verify your age
+- to organize your participation in the final event if needed (booking accommodation and purchasing tickets)'''
+    },
+    'invalid_date': {
+        'uz': '❌ Noto\'g\'ri sana formati. KK.OO.YYYY formatida kiriting (masalan: 23.10.2007)',
+        'ru': '❌ Неверный формат даты. Используйте ДД.ММ.ГГГГ (например: 23.10.2007)',
+        'en': '❌ Invalid date format. Please use DD.MM.YYYY format (e.g. 23.10.2007)'
+    },
+    'invalid_pinfl': {
+        'uz': '❌ JSHSHIR aynan 14 ta raqamdan iborat bo\'lishi kerak. Qaytadan kiriting.',
+        'ru': '❌ ПИНФЛ должен содержать ровно 14 цифр. Попробуйте снова.',
+        'en': '❌ PINFL must be exactly 14 digits. Please try again.'
+    },
+    'registration_almost_done': {
+        'uz': '''Deyarli tayyor 🔄
+
+Ishtirokingizni tasdiqlash uchun hackathonni tanlang:
+Menu → 🚀 Xakatonlar → AI500! → Ro'yxatdan o'tish ✅
+
+⚠️ Hackathon tanlamasdan ro'yxatdan o'tish haqiqiy emas''',
+        'ru': '''Почти готово 🔄
+
+Для подтверждения участия выберите хакатон:
+Меню → 🚀 Хакатоны → AI500! → Регистрация ✅
+
+⚠️ Регистрация без выбора хакатона недействительна''',
+        'en': '''You're almost done 🔄
+
+To confirm your participation, please choose your hackathon:
+Menu → 🚀 Hackathons → AI500! → Register ✅
+
+⚠️ Registration without selecting a hackathon is not valid'''
+    },
+    
+    # Hackathon related
+    'no_hackathons': {
+        'uz': 'Xakatonlar mavjud emas',
+        'ru': 'Нет доступных хакатонов',
+        'en': 'No hackathons available'
+    },
+    'available_hackathons': {
+        'uz': 'Mavjud xakatonlar',
+        'ru': 'Доступные хакатоны',
+        'en': 'Available hackathons'
+    },
+    'your_hackathons': {
+        'uz': 'Sizning xakatonlaringiz',
+        'ru': 'Ваши хакатоны',
+        'en': 'Your hackathons'
+    },
+    'register': {
+        'uz': 'Ro\'yxatdan o\'tish',
+        'ru': 'Зарегистрироваться',
+        'en': 'Register'
+    },
+    'registered': {
+        'uz': 'Ro\'yxatdan o\'tdingiz',
+        'ru': 'Вы зарегистрированы',
+        'en': 'You are registered'
+    },
+    'see_details': {
+        'uz': 'Batafsil ko\'rish',
+        'ru': 'Подробнее',
+        'en': 'See details'
+    },
+    'prize_pool': {
+        'uz': 'Sovrin jamg\'armasi',
+        'ru': 'Призовой фонд',
+        'en': 'Prize pool'
+    },
+    'registered_teams': {
+        'uz': 'Ro\'yxatdan o\'tgan jamoalar',
+        'ru': 'Зарегистрированных команд',
+        'en': 'Registered teams'
+    },
+    
+    # Team related
+    'create_team': {
+        'uz': 'Jamoa yaratish',
+        'ru': 'Создать команду',
+        'en': 'Create team'
+    },
+    'join_team': {
+        'uz': 'Jamoaga qo\'shilish',
+        'ru': 'Присоединиться к команде',
+        'en': 'Join team'
+    },
+    'create_new_team': {
+        'uz': '🆕 Yangi jamoa yaratish',
+        'ru': '🆕 Создать новую команду',
+        'en': '🆕 Create new team'
+    },
+    'join_existing_team': {
+        'uz': '🔗 Mavjud jamoaga qo\'shilish',
+        'ru': '🔗 Присоединиться к команде',
+        'en': '🔗 Join existing team'
+    },
+    'enter_team_name': {
+        'uz': '📝 Jamoa nomini kiriting:',
+        'ru': '📝 Введите название команды:',
+        'en': '📝 Enter your team name:'
+    },
+    'enter_team_code': {
+        'uz': '🔑 Jamoa kodini kiriting:',
+        'ru': '🔑 Введите код команды:',
+        'en': '🔑 Enter the team code:'
+    },
+    'team_created': {
+        'uz': '''✅ Jamoa yaratildi!
+
+📁 Nomi: {name}
+🔑 Kod: {code}
+
+Bu kodni jamoadoshlaringiz bilan ulashing, ular ham qo'shilishi uchun.
+
+ℹ️ Yaqinda hackathonning keyingi bosqichlari haqida xabar olasiz.
+Iltimos, botni bloklamang!''',
+        'ru': '''✅ Команда создана!
+
+📁 Название: {name}
+🔑 Код: {code}
+
+Поделитесь этим кодом с вашими товарищами по команде, чтобы они могли присоединиться.
+
+ℹ️ Скоро вы получите обновления о следующих этапах хакатона.
+Пожалуйста, не блокируйте бота!''',
+        'en': '''✅ Team created!
+
+📁 Name: {name}
+🔑 Code: {code}
+
+Share this code with your teammates so they can join the team.
+
+ℹ️ Soon you will receive updates about the next stages of this hackathon.
+Please do not block the bot!'''
+    },
+    'team_joined': {
+        'uz': '✅ Siz \'{name}\' jamoasiga qo\'shildingiz!',
+        'ru': '✅ Вы присоединились к команде \'{name}\'!',
+        'en': '✅ You have joined team \'{name}\'!'
+    },
+    'invalid_team_code': {
+        'uz': '❌ Noto\'g\'ri jamoa kodi. Tekshirib, qayta urinib ko\'ring.',
+        'ru': '❌ Неверный код команды. Проверьте и попробуйте снова.',
+        'en': '❌ Invalid team code. Please check and try again.'
+    },
+    'team_name': {
+        'uz': 'Jamoa nomi',
+        'ru': 'Название команды',
+        'en': 'Team name'
+    },
+    'team_code': {
+        'uz': 'Jamoa kodi',
+        'ru': 'Код команды',
+        'en': 'Team code'
+    },
+    'team_members': {
+        'uz': 'Jamoa a\'zolari',
+        'ru': 'Участники команды',
+        'en': 'Team members'
+    },
+    'leave_team': {
+        'uz': 'Jamoani tark etish',
+        'ru': 'Покинуть команду',
+        'en': 'Leave team'
+    },
+    'remove_member': {
+        'uz': 'A\'zoni o\'chirish',
+        'ru': 'Удалить участника',
+        'en': 'Remove member'
+    },
+    'how_to_participate': {
+        'uz': 'Qanday ishtirok etmoqchisiz?',
+        'ru': 'Как вы хотите участвовать?',
+        'en': 'How would you like to participate?'
+    },
+    
+    # Stages
+    'stage': {
+        'uz': 'Bosqich',
+        'ru': 'Этап',
+        'en': 'Stage'
+    },
+    'stages': {
+        'uz': 'Bosqichlar',
+        'ru': 'Этапы',
+        'en': 'Stages'
+    },
+    'deadline': {
+        'uz': 'Muddat',
+        'ru': 'Дедлайн',
+        'en': 'Deadline'
+    },
+    'submit': {
+        'uz': 'Topshirish',
+        'ru': 'Отправить',
+        'en': 'Submit'
+    },
+    'submission_received': {
+        'uz': '✅ Topshiriq qabul qilindi!\n\nOmad! 🍀',
+        'ru': '✅ Работа принята!\n\nУдачи! 🍀',
+        'en': '✅ Submission received!\n\nGood luck! 🍀'
+    },
+    'deadline_passed': {
+        'uz': '⏰ Bosqich muddati tugagan :(',
+        'ru': '⏰ Срок этапа уже истёк :(',
+        'en': '⏰ Stage deadline has already passed :('
+    },
+    'submit_your_work': {
+        'uz': '''📤 Ishingizni topshiring
+
+Demo veb-sayt havolasini yuboring yoki fayl yuklang (PDF, rasm, video va boshqalar):''',
+        'ru': '''📤 Отправьте вашу работу
+
+Отправьте ссылку на демо-сайт или загрузите файл (PDF, изображение, видео и т.д.):''',
+        'en': '''📤 Submit your work
+
+Send the link to your live demo website or upload a file (PDF, image, video, etc.):'''
+    },
+    
+    # Settings / Profile
+    'choose_language': {
+        'uz': 'Tilni tanlang',
+        'ru': 'Выберите язык',
+        'en': 'Choose your language'
+    },
+    'your_data': {
+        'uz': 'Sizning ma\'lumotlaringiz',
+        'ru': 'Ваши данные',
+        'en': 'Your data'
+    },
+    'first_name': {
+        'uz': 'Ism',
+        'ru': 'Имя',
+        'en': 'First name'
+    },
+    'last_name': {
+        'uz': 'Familiya',
+        'ru': 'Фамилия',
+        'en': 'Last name'
+    },
+    'birth_date': {
+        'uz': 'Tug\'ilgan sana',
+        'ru': 'Дата рождения',
+        'en': 'Birth date'
+    },
+    'gender': {
+        'uz': 'Jins',
+        'ru': 'Пол',
+        'en': 'Gender'
+    },
+    'male': {
+        'uz': 'Erkak',
+        'ru': 'Мужской',
+        'en': 'Male'
+    },
+    'female': {
+        'uz': 'Ayol',
+        'ru': 'Женский',
+        'en': 'Female'
+    },
+    'location': {
+        'uz': 'Joylashuv',
+        'ru': 'Местоположение',
+        'en': 'Location'
+    },
+    'change_first_name': {
+        'uz': 'Ismni o\'zgartirish',
+        'ru': 'Изменить имя',
+        'en': 'Change first name'
+    },
+    'change_last_name': {
+        'uz': 'Familiyani o\'zgartirish',
+        'ru': 'Изменить фамилию',
+        'en': 'Change last name'
+    },
+    'not_set': {
+        'uz': 'Belgilanmagan',
+        'ru': 'Не указано',
+        'en': 'Not set'
+    },
+    
+    # Help
+    'need_help': {
+        'uz': 'Yordam kerakmi yoki xato topdingizmi?',
+        'ru': 'Нужна помощь или нашли ошибку?',
+        'en': 'Need help or found a bug?'
+    },
+    'help_text': {
+        'uz': '''Agar sizda savollar bo'lsa, botdan foydalanishda yordam kerak bo'lsa yoki takomillashtirish bo'yicha takliflaringiz bo'lsa, biz bilan bog'laning:''',
+        'ru': '''Если у вас есть вопросы, нужна помощь с ботом или есть предложения по улучшению, свяжитесь с нами:''',
+        'en': '''If you have questions, need assistance using the bot or have suggestions for improvement, please contact us at:'''
+    },
+    'describe_problem': {
+        'uz': 'Muammoni batafsil tasvirlab, iloji bo\'lsa skrinshot ham qo\'shing.\nTez orada javob beramiz',
+        'ru': 'Опишите проблему подробно и приложите скриншоты, если возможно.\nМы скоро ответим',
+        'en': 'Describe the problem in detail and attach screenshots if possible.\nWe will get back to you soon'
+    },
+    
+    # Navigation
+    'back': {
+        'uz': 'Orqaga',
+        'ru': 'Назад',
+        'en': 'Back'
+    },
+    'main_menu': {
+        'uz': 'Asosiy menyu',
+        'ru': 'Главное меню',
+        'en': 'Main menu'
+    },
+    'cancel': {
+        'uz': 'Bekor qilish',
+        'ru': 'Отмена',
+        'en': 'Cancel'
+    },
+    'operation_cancelled': {
+        'uz': 'Operatsiya bekor qilindi.',
+        'ru': 'Операция отменена.',
+        'en': 'Operation cancelled.'
+    },
+    
+    # Notifications
+    'days_left_3': {
+        'uz': '⏳ Birinchi vazifagacha 3 kun qoldi!\n\nBirinchi vazifa yaqinlashmoqda, shuning uchun loyiha g\'oyasini belgilash uchun hozir eng yaxshi vaqt.',
+        'ru': '⏳ До первого задания осталось 3 дня!\n\nПервое задание уже скоро, так что сейчас самое время определиться с идеей проекта.',
+        'en': '⏳ 3 days left until the first task!\n\nYour first task is coming up soon, so now is a good time to settle on your project idea.'
+    },
+    'days_left_2': {
+        'uz': '🕐 2 kun ichida birinchi vazifangizni olasiz!',
+        'ru': '🕐 Через 2 дня вы получите первое задание!',
+        'en': '🕐 In just two days you will receive your first task!'
+    },
+    'deadline_approaching': {
+        'uz': '⏳ Bosqich muddati yaqinlashmoqda!\n\nBugun 23:59 gacha — javoblaringizni topshirishning oxirgi imkoniyati.',
+        'ru': '⏳ Дедлайн этапа приближается!\n\nСегодня до 23:59 — последний шанс отправить ваши ответы.',
+        'en': '⏳ Stage deadline approaching!\n\nToday until 23:59 — the final chance to submit your answers.'
+    },
+    'congratulations_stage': {
+        'uz': '🎉 {stage} bosqichiga o\'tganingiz bilan tabriklaymiz!',
+        'ru': '🎉 Поздравляем с прохождением в {stage} этап!',
+        'en': '🎉 Congratulations on making it to {stage}!'
+    },
+    
+    # Admin
+    'admin_panel': {
+        'uz': '🔐 Admin paneli',
+        'ru': '🔐 Панель администратора',
+        'en': '🔐 Admin Panel'
+    },
+    'create_hackathon': {
+        'uz': 'Hackathon yaratish',
+        'ru': 'Создать хакатон',
+        'en': 'Create Hackathon'
+    },
+    'manage_hackathons': {
+        'uz': 'Hackathonlarni boshqarish',
+        'ru': 'Управление хакатонами',
+        'en': 'Manage Hackathons'
+    },
+    'broadcast_message': {
+        'uz': 'Xabar yuborish',
+        'ru': 'Рассылка сообщений',
+        'en': 'Broadcast Message'
+    },
+    'statistics': {
+        'uz': 'Statistika',
+        'ru': 'Статистика',
+        'en': 'Statistics'
+    },
+    'manage_stages': {
+        'uz': 'Bosqichlarni boshqarish',
+        'ru': 'Управление этапами',
+        'en': 'Manage Stages'
+    },
+    'export_submissions': {
+        'uz': 'Topshiriqlarni eksport qilish',
+        'ru': 'Экспорт работ',
+        'en': 'Export Submissions'
+    },
+    'access_denied': {
+        'uz': '⛔ Kirish taqiqlangan',
+        'ru': '⛔ Доступ запрещён',
+        'en': '⛔ Access denied'
+    },
+    
+    # File upload
+    'file_received': {
+        'uz': '📁 Fayl qabul qilindi: {filename}',
+        'ru': '📁 Файл получен: {filename}',
+        'en': '📁 File received: {filename}'
+    },
+    'link_received': {
+        'uz': '🔗 Havola qabul qilindi',
+        'ru': '🔗 Ссылка получена',
+        'en': '🔗 Link received'
     },
 }
+
+
+def get_text(key: str, lang: str = 'en', **kwargs) -> str:
+    """Get translated text by key and language"""
+    if key not in TRANSLATIONS:
+        return key
+    
+    text = TRANSLATIONS[key].get(lang, TRANSLATIONS[key].get('en', key))
+    
+    if kwargs:
+        try:
+            text = text.format(**kwargs)
+        except KeyError:
+            pass
+    
+    return text
