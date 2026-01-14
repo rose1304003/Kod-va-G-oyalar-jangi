@@ -1,2 +1,17 @@
-python-telegram-bot[job-queue]==20.7
-psycopg2-binary==2.9.9
+# ITCom Hackathons Bot - Requirements
+
+# Telegram Bot
+python-telegram-bot==21.3
+
+# Database
+asyncpg==0.29.0
+aiosqlite==0.20.0
+
+# Utilities
+python-dotenv==1.0.0
+
+# Scheduling (for notifications)
+apscheduler==3.10.4
+
+# Timezone handling
+pytz==2024.1
